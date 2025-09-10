@@ -19,7 +19,7 @@ export default function Home() {
           alt="Icon"
           width={230}
           height={230}
-          className="mt-[-100px]"
+          className="mt-[-50px] md:mt-[-90px] mb-[-50px] md:mb-[-50px] w-32 h-32 md:w-[200px] md:h-[200px]"
         />
       </div>
       <AboutSection />
