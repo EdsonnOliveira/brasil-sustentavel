@@ -44,7 +44,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen bg-[url('/bg.png')] bg-cover bg-center overflow-hidden bg-white">
+    <section id="hero" className="relative min-h-screen bg-[url('/bg.png')] bg-cover bg-center overflow-hidden bg-white flex items-center justify-center">
       {/* Background decorative elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-32 h-32 bg-[#A0B949] opacity-20 rounded-full blur-2xl"></div>
@@ -52,12 +52,12 @@ export default function HeroSection() {
         <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-[#A0B949] opacity-10 rounded-full blur-xl"></div>
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 py-16 sm:py-20 lg:py-24">
-        <div className="flex flex-col items-center text-center min-h-[70vh] sm:min-h-[80vh] justify-center">
+      <div className="relative z-10 container mx-auto px-4 py-16 sm:py-20 lg:py-24 flex">
+        <div className="flex flex-col min-h-[70vh] sm:min-h-[80vh] justify-center">
           {/* Content */}
           <div className="space-y-6 sm:space-y-8 max-w-4xl">
             <div className="space-y-4 sm:space-y-6">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-baloo-bold text-white leading-tight">
+              <h1 className="text-5xl sm:text-4xl md:text-5xl text-center md:text-left lg:text-6xl font-baloo-bold text-white leading-tight">
                 Construindo um
                 <span className="block text-[#A0B949]">Brasil Mais</span>
                 <span className="block">Sustentável</span>
@@ -67,7 +67,7 @@ export default function HeroSection() {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-4 items-center">
               <button 
                 onClick={() => scrollToSection('about')}
                 className="bg-[#A0B949] hover:bg-[#8FA83A] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-baloo-semibold transition-all duration-300 cursor-pointer flex items-center justify-center space-x-2 w-full sm:w-auto"
@@ -86,7 +86,7 @@ export default function HeroSection() {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 pt-8 sm:pt-12">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 pt-8 sm:pt-0">
               <div className="text-center">
                 <div className="text-2xl sm:text-3xl font-baloo-bold text-[#A0B949]">500+</div>
                 <div className="text-gray-300 text-sm sm:text-base font-baloo-regular">Projetos Realizados</div>
