@@ -67,7 +67,7 @@ export default function Header() {
   };
 
   return (
-    <header className={`${shouldShowGreenBackground ? 'bg-[#203226]' : 'bg-transparent'} fixed top-0 z-40 w-full overflow-hidden transition-all duration-300`}>
+    <header className={`${shouldShowGreenBackground || isMobileMenuOpen ? 'bg-[#203226]' : 'bg-transparent'} fixed top-0 z-40 w-full overflow-hidden transition-all duration-300`}>
       {/* Background pattern - only show when background is green */}
       {shouldShowGreenBackground && (
         <div className="absolute inset-0 opacity-10">
