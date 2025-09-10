@@ -15,7 +15,7 @@ export default function Home() {
       <HeroSection />
       <div className="w-full flex justify-center items-center relative">
         <Image
-          src='/icon.png' 
+          src='/logo-icon.png'
           alt="Icon"
           width={230}
           height={230}
