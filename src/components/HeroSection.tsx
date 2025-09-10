@@ -44,7 +44,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen bg-[url('/bg.png')] bg-cover bg-center overflow-hidden bg-white flex items-center justify-center">
+    <section id="hero" className="h-screen relative min-h-screen bg-[url('/bg.png')] bg-cover bg-center overflow-hidden bg-white flex items-center justify-center">
       {/* Background decorative elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-32 h-32 bg-[#A0B949] opacity-20 rounded-full blur-2xl"></div>
@@ -57,12 +57,12 @@ export default function HeroSection() {
           {/* Content */}
           <div className="space-y-6 sm:space-y-8 max-w-4xl">
             <div className="space-y-4 sm:space-y-6">
-              <h1 className="text-5xl sm:text-4xl md:text-5xl text-center md:text-left lg:text-6xl font-baloo-bold text-white leading-tight">
+              <h1 className="text-4xl md:text-5xl text-center md:text-left lg:text-6xl font-baloo-bold text-white leading-tight">
                 Construindo um
                 <span className="block text-[#A0B949]">Brasil Mais</span>
                 <span className="block">Sustentável</span>
               </h1>
-              <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto px-4 font-baloo-regular">
+              <p className="text-lg text-center md:text-left sm:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto px-4 font-baloo-regular">
                 Transformamos ideias em ações concretas para um futuro mais verde e próspero para todos os brasileiros.
               </p>
             </div>
@@ -86,7 +86,7 @@ export default function HeroSection() {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 pt-8 sm:pt-0">
+            <div className="grid grid-cols-3 gap-6 sm:gap-8 pt-8 sm:pt-0">
               <div className="text-center">
                 <div className="text-2xl sm:text-3xl font-baloo-bold text-[#A0B949]">500+</div>
                 <div className="text-gray-300 text-sm sm:text-base font-baloo-regular">Projetos Realizados</div>
